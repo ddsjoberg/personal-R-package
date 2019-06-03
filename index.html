@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
   <head>
-    <title>Writing a Personal R Package</title>
+    <title>My Own Private Idaho Repo</title>
     <meta charset="utf-8" />
     <meta name="author" content="Daniel D. Sjoberg  Memorial Sloan Kettering Cancer Center Department of Epidemiology and Biostatistics" />
     <meta name="date" content="2019-06-04" />
@@ -14,8 +14,8 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Writing a Personal R Package
-## with Rstudio, {usethis}, and {roxygen2}
+# My Own Private <del>Idaho</del> Repo
+## Writing a Personal R Package with Rstudio, {usethis}, and {roxygen2}
 ### Daniel D. Sjoberg<br/><br/>Memorial Sloan Kettering Cancer Center<br/>Department of Epidemiology and Biostatistics
 ### June 4, 2019
 
@@ -730,6 +730,18 @@ So much!  Here's a very abbreviated list
 ]
 
 ---
+class: center
+# You've Successfully Created an R Package!
+
+&lt;img src="images/linda_richman_buttah.gif" width="35%"&gt;
+&lt;div align="left"&gt;
+
+* Push your updates to GitHub
+
+* Use `remotes::install_github("yourname/packagename")` to install package
+
+
+---
 class: inverse
 # Outline
 .xlarge[
@@ -752,16 +764,8 @@ class: inverse
 ]
 
 ---
-# Other Tips
-
-- {roxygen2} tags `@import` and `@importFrom`
-
-- `use_pipe()` to import and export {magrittr} pipe operator
-
-- helper functions for tidy development
-
 ---
-# Other Tips: Import
+# Other Tips: @import
 
 - there are a few functions from the tidyverse we use frequently
 
@@ -772,7 +776,7 @@ class: inverse
 - {roxygen2} tags `@import` and `@importFrom`
 
 ---
-# Other Tips: Import
+# Other Tips: @import
 .pull-left[
 - remember that boring package-level documentation file we made with `use_package_doc()`? let's use this file to import commonly used functions
 
@@ -857,64 +861,36 @@ these are my favorites
   - keeps your code easy to read, looking good, and collaborative
 
 
----
-# Other Tips
-
-- Save your package to GitHub to 
-
-- create a development branch (e.g. *dev*) and do 100% of your initial package building directly on this branch
-
-- once package is standing on its own legs (not necessarily done), make all updates via forks or feature branches
-
-- protect your *master* and *dev* branches
-  - from the GitHub repo, select *Settings*, select *Branches*, and add rules for each branch
-  
-  - for the *dev* and  *master* branches, I recommend 
-  
-      - "Require pull request reviews before merging" 
-      
-      - "Require status checks to pass before merging" 
-      
-      - "Include administrators"
 
 ---
 class: inverse
 # Outline
 .xlarge[
 .pull-left[
+- Why an  R Package?
+
 - R Package Structure
 
 - Getting Started
 
 - Adding Functions
-
-- Build your Package
-
-- Unit Tests
-
-- Advanced Setup
 ]
 .pull-right[
-- Advanced Documentation
+- Build your Package
 
-- Include Datasets
+- Keep it on GitHub
 
-- Other Tips
-
-- Non-Standard Evaluation 
-
-- Collaborate with GitHub
-
-- _**Create Package Website**_
+- **Create Package Website**
 ]
 ]
+
 
 ---
 # Create Package Website
 
 - lastly, it's easy to create a website for your package
 
-- easier for a user to navigate, find functions, and 
+- easier for a user to navigate, find functions, and review examples
 
 - from the GitHub repo, select *Settings*, scroll down to *GitHub Pages*, from the *Source* menu select *master branch/docs folder*
 
@@ -930,14 +906,16 @@ class: inverse
 # Resources
 
 .pull-left[
+
+- More detailed Guide
+
+  - http://www.danieldsjoberg.com/writing-R-packages/
+  
 - {roxygen2}
   - *Rd* vignette in {roxygen2} package
   - Broman Blog https://tinyurl.com/yxj2vzkn
   - RStudio Blog https://tinyurl.com/yyrvysoy
   
-- continuous integration
-  - Silge Blog https://tinyurl.com/y2b6pxne
-
 - *R Packages*, by Hadley Wickham
   - touches on most of the topics covered here (package structures, unit tests, documentation)
   - does not include {usethis} setup
@@ -957,10 +935,8 @@ background-size: contain
 
 # Thank you
 
-&lt;img src = "images/slide_show_icon.png" width="2.4%" height="2.4%"&gt; slides at &lt;a href="http://www.danieldsjoberg.com/writing-R-packages"&gt;danieldsjoberg.com/writing-R-packages&lt;/a&gt;  
-&lt;img src = "images/github_icon.png" width="2.4%" height="2.4%"&gt; source code* at &lt;a href="https://github.com/ddsjoberg/writing-R-packages"&gt;github.com/ddsjoberg/writing-R-packages&lt;/a&gt;
-
-.footnote[.small[\* has the code for the package we built here]]
+&lt;img src = "images/slide_show_icon.png" width="2.4%" height="2.4%"&gt; slides at &lt;a href="http://www.danieldsjoberg.com/personal-R-package/"&gt;danieldsjoberg.com/personal-R-package&lt;/a&gt;  
+&lt;img src = "images/github_icon.png" width="2.4%" height="2.4%"&gt; source code* at &lt;a href="https://github.com/ddsjoberg/personal-R-package"&gt;github.com/ddsjoberg/personal-R-package&lt;/a&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

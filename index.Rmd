@@ -1,6 +1,6 @@
 ---
-title: "Writing a Personal R Package"
-subtitle: "with Rstudio, {usethis}, and {roxygen2}"
+title: "My Own Private ~~Idaho~~ Repo"
+subtitle: "Writing a Personal R Package with Rstudio, {usethis}, and {roxygen2}"
 author: "Daniel D. Sjoberg<br/><br/>Memorial Sloan Kettering Cancer Center<br/>Department of Epidemiology and Biostatistics"
 date: "June 4, 2019"
 output:
@@ -725,6 +725,18 @@ So much!  Here's a very abbreviated list
 ]
 
 ---
+class: center
+# You've Successfully Created an R Package!
+
+<img src="images/linda_richman_buttah.gif" width="35%">
+<div align="left">
+
+* Push your updates to GitHub
+
+* Use `remotes::install_github("yourname/packagename")` to install package
+
+
+---
 class: inverse
 # Outline
 .xlarge[
@@ -747,16 +759,8 @@ class: inverse
 ]
 
 ---
-# Other Tips
-
-- {roxygen2} tags `@import` and `@importFrom`
-
-- `use_pipe()` to import and export {magrittr} pipe operator
-
-- helper functions for tidy development
-
 ---
-# Other Tips: Import
+# Other Tips: @import
 
 - there are a few functions from the tidyverse we use frequently
 
@@ -767,7 +771,7 @@ class: inverse
 - {roxygen2} tags `@import` and `@importFrom`
 
 ---
-# Other Tips: Import
+# Other Tips: @import
 .pull-left[
 - remember that boring package-level documentation file we made with `use_package_doc()`? let's use this file to import commonly used functions
 
@@ -852,64 +856,36 @@ these are my favorites
   - keeps your code easy to read, looking good, and collaborative
 
 
----
-# Other Tips
-
-- Save your package to GitHub to 
-
-- create a development branch (e.g. *dev*) and do 100% of your initial package building directly on this branch
-
-- once package is standing on its own legs (not necessarily done), make all updates via forks or feature branches
-
-- protect your *master* and *dev* branches
-  - from the GitHub repo, select *Settings*, select *Branches*, and add rules for each branch
-  
-  - for the *dev* and  *master* branches, I recommend 
-  
-      - "Require pull request reviews before merging" 
-      
-      - "Require status checks to pass before merging" 
-      
-      - "Include administrators"
 
 ---
 class: inverse
 # Outline
 .xlarge[
 .pull-left[
+- Why an  R Package?
+
 - R Package Structure
 
 - Getting Started
 
 - Adding Functions
-
-- Build your Package
-
-- Unit Tests
-
-- Advanced Setup
 ]
 .pull-right[
-- Advanced Documentation
+- Build your Package
 
-- Include Datasets
+- Keep it on GitHub
 
-- Other Tips
-
-- Non-Standard Evaluation 
-
-- Collaborate with GitHub
-
-- _**Create Package Website**_
+- **Create Package Website**
 ]
 ]
+
 
 ---
 # Create Package Website
 
 - lastly, it's easy to create a website for your package
 
-- easier for a user to navigate, find functions, and 
+- easier for a user to navigate, find functions, and review examples
 
 - from the GitHub repo, select *Settings*, scroll down to *GitHub Pages*, from the *Source* menu select *master branch/docs folder*
 
@@ -925,14 +901,16 @@ class: inverse
 # Resources
 
 .pull-left[
+
+- More detailed Guide
+
+  - http://www.danieldsjoberg.com/writing-R-packages/
+  
 - {roxygen2}
   - *Rd* vignette in {roxygen2} package
   - Broman Blog https://tinyurl.com/yxj2vzkn
   - RStudio Blog https://tinyurl.com/yyrvysoy
   
-- continuous integration
-  - Silge Blog https://tinyurl.com/y2b6pxne
-
 - *R Packages*, by Hadley Wickham
   - touches on most of the topics covered here (package structures, unit tests, documentation)
   - does not include {usethis} setup
@@ -952,7 +930,6 @@ background-size: contain
 
 # Thank you
 
-<img src = "images/slide_show_icon.png" width="2.4%" height="2.4%"> slides at <a href="http://www.danieldsjoberg.com/writing-R-packages">danieldsjoberg.com/writing-R-packages</a>  
-<img src = "images/github_icon.png" width="2.4%" height="2.4%"> source code* at <a href="https://github.com/ddsjoberg/writing-R-packages">github.com/ddsjoberg/writing-R-packages</a>
+<img src = "images/slide_show_icon.png" width="2.4%" height="2.4%"> slides at <a href="http://www.danieldsjoberg.com/personal-R-package/">danieldsjoberg.com/personal-R-package</a>  
+<img src = "images/github_icon.png" width="2.4%" height="2.4%"> source code* at <a href="https://github.com/ddsjoberg/personal-R-package">github.com/ddsjoberg/personal-R-package</a>
 
-.footnote[.small[\* has the code for the package we built here]]
