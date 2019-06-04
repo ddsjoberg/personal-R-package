@@ -528,7 +528,7 @@ We will now use {roxygen2} comments in our code to document our new function (ak
 
 * by automating, we link the function code to the documentation 
 
-* this helps keep the documentation up to date
+* this helps keep the documentation stay up to date
 
 ```r
 > usethis::use_roxygen_md()
@@ -782,10 +782,10 @@ class: inverse
 #' @import dplyr
 #' @import purrr
 #' @importFrom tidyr nest unnest 
-     spread gather complete
+#'   spread gather complete
 #' @importFrom tibble tibble as_tibble
 #' @importFrom rlang .data %||% set_names sym 
-     expr enexpr quo enquo parse_expr
+#'   expr enexpr quo enquo parse_expr
 #' @importFrom glue glue
 #' @keywords internal
 "_PACKAGE"
@@ -931,7 +931,7 @@ class: inverse
 
 .pull-left[
 
-- More detailed Guide
+- More detailed guide
 
   - http://www.danieldsjoberg.com/writing-R-packages/
   
