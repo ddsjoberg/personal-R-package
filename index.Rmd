@@ -96,7 +96,7 @@ class: inverse
 
 - Built-in documentation
 
-- Reprodicibility
+- Reproducibility
 
 - Collaboration
 
@@ -704,7 +704,7 @@ So much!  Here's a very abbreviated list
   - hidden files/folders
   - portable file names
   - executable files
-  - package subdirectories
+  - package sub-directories
   - left-over files
 
 * DESCRIPTION/NAMESPACE file    
